@@ -1,0 +1,17 @@
+.icon-post,
+.icon-phone {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    transition: fill $transition-derault;
+
+    .icon-post:hover,
+        .icon-post:focus,
+        .icon-phone:hover,
+        .icon-phone:focus {
+            fill: currentColor;
+        }
+}

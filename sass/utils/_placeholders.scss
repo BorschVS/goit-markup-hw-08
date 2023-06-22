@@ -1,0 +1,119 @@
+// %placeholder_name {
+//     color: black;
+//     font-style: 12px;
+//     padding: 2px;
+// }
+
+// .class-error {
+//     @extend %placeholder_name;
+//     background-color: red;
+// }
+
+// .class-access {
+//     @extend %placeholder_name;
+//     background-color: green;
+// }
+
+%centeredFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%centeredMargin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+%list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+%listFlex {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+%container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+%logo {
+    font-family: $font-logo;
+    font-size: 26px;
+    color: $accent-color;
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+%nav {
+    display: flex;
+        align-items: center;
+        padding: 32px 0;
+    
+        fill: $primary-text-color;
+        color: $title-text-color;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.17;
+}
+
+%button {
+    display: inline-block;
+    min-width: 216px;
+    height: 50px;
+    padding: 10px 32px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 1.87;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+
+    color: $primary-white-color;
+    background-color: $accent-color;
+
+    cursor: pointer;
+
+    transition: color $transition-derault,
+    background-color $transition-derault;
+}
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%title {
+    color: $title-text-color;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+
+  %subtitle {
+    margin-bottom: 0;
+    margin-top: 0;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-text-color;
+  }

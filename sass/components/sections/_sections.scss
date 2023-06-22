@@ -1,0 +1,7 @@
+.feauture-section, .section-about, .section-partner, .main-section {
+  @extend %section;
+}
+
+.section-about{
+  padding-top: 0;
+}

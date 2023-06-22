@@ -1,0 +1,12 @@
+.logo-footer {
+    @extend %logo;
+    display: inline-block;
+    margin-bottom: 28px;
+
+    
+}
+
+.logo-footer--color {
+    color: $primary-white-color;
+}
+

@@ -1,0 +1,47 @@
+.filter-list {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+.filter-list__button-items {
+    min-width: 73px;
+}
+
+.btn-element {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+  
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 25px;
+  
+    cursor: pointer;
+
+    color: $title-text-color;
+    background-color: $btn-menu-color;
+  
+    transition: background-color $transition-derault,
+    color $transition-derault, box-shadow $transition-derault;
+
+    &:hover,
+    &:focus {
+      color: $primary-white-color;
+      background-color: $hover-button-color;
+    
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    
+    &:active {
+      color: $accent-color;
+      background-color: $primary-white-color;
+      border: 1px solid transparent;
+    }
+  }

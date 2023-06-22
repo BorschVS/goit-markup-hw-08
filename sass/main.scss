@@ -1,0 +1,45 @@
+@import './utils/variables';
+
+@import './base/body';
+
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/each';
+@import './utils/mixins';
+
+// main
+
+@import './components/sections/sections';
+
+@import './components/page-header/page-header';
+@import './components/page-header/logo';
+@import './components/page-header/site-nav';
+@import './components/page-header/contcts-icons';
+
+@import './components/main/hero/hero';
+
+@import './components/main/feautures/feautures';
+@import './components/main/feautures/feautures-icon-settings';
+
+@import './components/main/about/about-us';
+
+@import './components/main/team/team';
+@import './components/main/team/social-icons';
+
+@import './components/main/partners/partners-icons';
+
+@import './components/footer/footer';
+@import './components/footer/footer-logo/footer-logo';
+@import './components/footer/address/address';
+@import './components/footer/social/social';
+@import './components/footer/subscribe-form/subscribe-form';
+
+// portfolio
+
+@import './components/portfolio/btn-filter/buttons';
+@import './components/portfolio/card-set/cards';
+
+
+// submit form 
+
+@import './components/modal/submit-form';

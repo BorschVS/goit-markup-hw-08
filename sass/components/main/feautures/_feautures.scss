@@ -1,0 +1,41 @@
+.container {
+  @extend %container;
+}
+
+.feauture-list {
+  @extend %list;
+  
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  
+}
+
+.feauture-list__item {
+  width: calc((100% - 90px) / 4);
+
+
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+    }
+
+  &:not(:nth-child(-n + 4)) {
+    margin-bottom: 0;
+    }
+}
+
+.feauture-box__subtitle {
+  @extend %subtitle;
+}
+
+.feauture-box__text {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+}
