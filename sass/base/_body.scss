@@ -1,8 +1,14 @@
+
+
 body {
     font-family: $font-primary;
     background-color: $primary-white-color;
     color: $primary-text-color;
     margin: 0;
+
+    // @media (min-width: 800px) {
+    //         background-color: teal;
+    //     }
 }
 
 img {

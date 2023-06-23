@@ -1,57 +1,61 @@
 .hero {
-    @extend %centeredMargin;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: $background-color;
+  @extend %centeredMargin;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: $background-color;
+  background-size: cover;
 }
 
 .hero__title {
-@extend %centeredMargin;
-    margin-top: 0;
-    margin-bottom: 0;
+  @extend %centeredMargin;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 360px;
+  padding: 0;
+
+  color: $primary-white-color;
+
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
     max-width: 696px;
-    padding: 0;
-
-    color: $primary-white-color;
-
     font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
+  }
 }
 
 .overlay {
-    min-height: 600px;
-    max-width: 1600px;
-    background-color: $bg-overlay-color;
-    background-image: $overlay-gradient,
-        url(../images/dec-pic/overlay-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 400px;
+  max-width: 1600px;
+  background-color: $bg-overlay-color;
+  background-image: $overlay-gradient, url(../images/dec-pic/overlay-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .button__primary {
-    @extend %button;
-    @extend %centeredMargin;
-    margin-top: 30px;
+  @extend %button;
+  @extend %centeredMargin;
+  margin-top: 30px;
 
-    color: $primary-white-color;
-    background-color: $accent-color;
-    border: 2px solid transparent;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: $shadow-button;
 
-    &:hover,
-    &:focus {
-        background-color: $hover-button-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $hover-button-color;
+  }
 
-    &:active {
-        color: $accent-color;
-        background-color: transparent;
-        border: 2px solid $accent-color;
-        cursor: pointer;
-      }
+  &:active {
+    color: $accent-color;
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    cursor: pointer;
+  }
 }
