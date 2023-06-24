@@ -12,12 +12,27 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    
+    @media screen and (min-width: $tablet) {
+        
+    }
+}
+
+.partner-list__item {
+    width: calc((100% - 30px * 1) / 2);
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px * 2) / 3);   
+    }
+
+    @media screen and (min-width: $desktop) {
+     width: 170px;
+    }
 }
 
 .partner-list__link {
     @extend %centeredFlex;
 
-    width: 170px;
     height: 92px;
     padding: 0;
     margin-top: 0;

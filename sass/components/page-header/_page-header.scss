@@ -1,0 +1,24 @@
+.page-header {
+    min-height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: $primary-white-color;
+    border-bottom: 1px solid $underline-color;
+}
+
+.container {
+
+    @media screen and (min-width:$desktop) {
+        width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+
+    &--display {
+        display: flex;
+        align-items: center;
+    }
+    
+}

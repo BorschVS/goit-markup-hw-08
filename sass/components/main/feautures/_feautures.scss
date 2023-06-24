@@ -16,6 +16,12 @@
 .feauture-list__item {
   width: 100%;
 
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: $tablet) {
     width: calc((100% - 30px * 2) / 2);
   }
@@ -28,11 +34,11 @@
 .feauture-box__subtitle {
   @extend %subtitle;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .feauture-box__text {
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin: 0;
 
   font-weight: 400;
   font-size: 14px;
