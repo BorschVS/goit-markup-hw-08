@@ -9,11 +9,18 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
   }
 
   @media screen and (min-width: $tablet) {
     display: none;
+  }
+}
+
+.menu-button__icon {
+  transition: fill $transition-derault;
+  &:active {
+    fill: $accent-color;
   }
 }
 
@@ -28,3 +35,4 @@
 .menu-button.is-open .icon-menu {
   display: none;
 }
+
