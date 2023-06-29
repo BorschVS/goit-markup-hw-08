@@ -11,6 +11,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -615,11 +617,18 @@ body.modal-open {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
     gap: 30px;
   }
 }

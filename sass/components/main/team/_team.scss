@@ -9,17 +9,23 @@
   margin-bottom: 50px;
 }
 
+.team-list__item:not(:last-child){
+  @media screen and (max-width: 767px) {
+margin-bottom: 30px;
+  }
+}
+
+
 .team-list {
   @extend %list;
-
 
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;  
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
+    gap: 30px;
   }
-  
 
   &__item {
     background-color: $primary-white-color;
