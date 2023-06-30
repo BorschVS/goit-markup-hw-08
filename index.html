@@ -27,12 +27,12 @@
         <!-- Navigation -->
         <nav class="main-nav">
           <a
-          href="https://borschvs.github.io/goit-markup-hw-06/"
-          class="page-header__logo logo"
-          rel="noopener"
-          target="_blank"
-          >Web<span class="page-header__logo--color">Studio</span></a
-        >
+            href="https://borschvs.github.io/goit-markup-hw-06/"
+            class="page-header__logo logo"
+            rel="noopener"
+            target="_blank"
+            >Web<span class="page-header__logo--color">Studio</span></a
+          >
           <button
             type="button"
             class="menu-button"
@@ -41,7 +41,7 @@
             aria-controls="mobile-menu"
           >
             <svg
-            class="menu-button__icon"
+              class="menu-button__icon"
               width="40"
               height="40"
               aria-label="Переключатель мобильного меню"
@@ -53,8 +53,12 @@
               <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" aria-expanded="false" data-menu>
-            
+          <div
+            class="menu-container"
+            id="menu-container"
+            aria-expanded="false"
+            data-menu
+          >
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a
@@ -97,10 +101,18 @@
             </ul>
 
             <ul class="media-list">
-              <li class="media-list__item"><a href="" class="media-list__link">Instagram</a></li>
-              <li class="media-list__item"><a href="" class="media-list__link">Twitter</a></li>
-              <li class="media-list__item"><a href="" class="media-list__link">Facebook</a></li>
-              <li class="media-list__item"><a href="" class="media-list__link">LinkedIn</a></li>
+              <li class="media-list__item">
+                <a href="" class="media-list__link">Instagram</a>
+              </li>
+              <li class="media-list__item">
+                <a href="" class="media-list__link">Twitter</a>
+              </li>
+              <li class="media-list__item">
+                <a href="" class="media-list__link">Facebook</a>
+              </li>
+              <li class="media-list__item">
+                <a href="" class="media-list__link">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -223,7 +235,12 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img srcset="./images/team/pd.jpg 1x, ./images/team/pd@2x.jpg 2x" src="images/team/pd.jpg" alt="Веселий чоловік" width="270" />
+              <img
+                srcset="./images/team/pd-450.jpg 450w, ./images/team/pd-900@2x.jpg 900w"
+                src="./images/team/pd-450.jpg"
+                alt="Веселий чоловік"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
               <div class="team-box">
                 <h3 class="team-box__subtitle">Ігор Дем'яненко</h3>
                 <p class="team-box__text">Product Designer</p>
@@ -273,9 +290,11 @@
             </li>
             <li class="team-list__item">
               <img
-                src="images/team/frontender.jpg"
+                class="team-img"
+                srcset="./images/team/frontender-450.jpg 450w, ./images/team/frontender-900@2x.jpg 900w"
+                src="./images/team/frontender-450.jpg"
                 alt="Усміхнена дівчина"
-                width="270"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="team-box">
                 <h3 class="team-box__subtitle">Ольга Рєпіна</h3>
@@ -326,9 +345,10 @@
             </li>
             <li class="team-list__item">
               <img
-                src="images/team/marketolog.jpg"
+                srcset="./images/team/marketolog-450.jpg 450w, ./images/team/marketolog-900@2x.jpg 900w"
+                src="images/team/marketolog-450.jpg"
                 alt="Усміхнений чоловік"
-                width="270"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="team-box">
                 <h3 class="team-box__subtitle">Микола Тарасов</h3>
@@ -378,7 +398,12 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="images/team/ui.jpg" alt="Впевнений чоловік" width="270" />
+              <img
+                srcset="./images/team/ui-450.jpg 450w, ./images/team/ui-900@2x.jpg 900w"
+                src="images/team/ui-450.jpg"
+                alt="Впевнений чоловік"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
               <div class="team-box">
                 <h3 class="team-box__subtitle">Михайло Єрмаков</h3>
                 <p class="team-box__text">UI Designer</p>
