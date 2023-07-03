@@ -38,40 +38,39 @@
   min-height: 400px;
   max-width: 1600px;
   background-color: $bg-overlay-color;
-  background-image: $overlay-gradient;
+  background-image: $overlay-gradient, url(../images/dec-pic/overlay-480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  @media screen and (max-width: 767px){
-    background-image: $overlay-gradient, url(../images/dec-pic/overlay-480.jpg);
-  }
-
-  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), 
+  @media screen and (min-device-pixel-ratio: 2), 
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
     background-image: $overlay-gradient, url(../images/dec-pic/overlay-960@2x.jpg);
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 577px) {
     background-image: $overlay-gradient, url(../images/dec-pic/overlay-768.jpg);
   }
 
-  @media screen and (min-width: $tablet) and (min-device-pixel-ratio: 2), 
+  @media screen and (min-width: 577px) and (min-device-pixel-ratio: 2), 
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
     background-image: $overlay-gradient, url(../images/dec-pic/overlay-1536@2x.jpg);
   }
 
-  @media screen and (min-width: $desktop) and (max-width: 1600px){
-    min-height: 600px;
+  @media screen and (min-width: 769px) {
     background-image: $overlay-gradient, url(../images/dec-pic/overlay-1600.jpg);
   }
 
-  @media screen and (min-width: $desktop) and (max-width: 1600px) and (min-device-pixel-ratio: 2), 
+  @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), 
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
     background-image: $overlay-gradient, url(../images/dec-pic/overlay-3200@2x.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-height: 600px;
   }
 }
 
