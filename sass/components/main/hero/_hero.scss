@@ -36,6 +36,12 @@
   background-image: $overlay-gradient, url(../images/dec-pic/overlay-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), 
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    
+  }
 }
 
 .button__primary {
