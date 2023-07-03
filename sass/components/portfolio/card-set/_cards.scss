@@ -11,12 +11,11 @@
   display: block;
   
   @media screen and (min-width: $tablet) {
-    display: inline-flex;
+    display: flex;
     flex-basis: calc((100% - 1 * 30px) / 2);
   }
 
   @media screen and (min-width: $desktop) {
-    display: inline-flex;
     flex-basis: calc((100% - 2 * 30px) / 3);
   }
 }
