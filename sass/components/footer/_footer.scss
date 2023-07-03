@@ -8,6 +8,7 @@
 
 .footer-container {
   @extend %container;
+
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -19,6 +20,7 @@
     justify-content: space-around;
 
     @media screen and (min-width: $desktop) {
+      width: 1200px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;

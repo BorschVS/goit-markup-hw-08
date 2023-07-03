@@ -3,6 +3,10 @@
   background-color: $second-bg-color;
 }
 
+.container.team {
+  padding: 0;
+}
+
 .team__title {
   @extend %title;
   text-align: center;

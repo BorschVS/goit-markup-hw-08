@@ -1,4 +1,10 @@
 .page-header {
+  min-height: 80px;
+
+  background-color: $primary-white-color;
+  border-bottom: 1px solid $underline-color;
+
+
   @media screen and (max-width: 767px) {
     position: relative;
     min-height: 60px;
@@ -6,14 +12,5 @@
 
   @media screen and (min-width: $tablet) {
     display: block;
-  }
-
-  min-height: 80px;
-
-  background-color: $primary-white-color;
-  border-bottom: 1px solid $underline-color;
-
-  &.container {
-    display: inline-flex;
   }
 }

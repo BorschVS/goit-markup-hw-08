@@ -201,9 +201,6 @@ body.modal-open {
     display: block;
   }
 }
-.page-header.container {
-  display: inline-flex;
-}
 
 @media screen and (max-width: 767px) {
   .menu-button {
@@ -254,12 +251,6 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) {
-  .main-nav {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1200px) {
   .main-nav {
     display: flex;
     justify-content: space-between;
@@ -317,7 +308,7 @@ body.modal-open {
 
 .site-nav__link,
 .contacts__link {
-  display: inline-block;
+  display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
@@ -339,7 +330,8 @@ body.modal-open {
 
 .contacts__link {
   color: #757575;
-  display: inline-block;
+  align-items: center;
+  line-height: normal;
 }
 @media screen and (max-width: 767px) {
   .contacts__link {
@@ -353,6 +345,14 @@ body.modal-open {
   .contacts__link {
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 0.24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    letter-spacing: 0.28px;
   }
 }
 
@@ -388,7 +388,6 @@ body.modal-open {
   .menu-container.is-open {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 768px) {
@@ -471,6 +470,12 @@ body.modal-open {
   background-color: #2f303a;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
   margin-top: 0;
@@ -496,10 +501,43 @@ body.modal-open {
   min-height: 400px;
   max-width: 1600px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dec-pic/overlay-1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
+@media screen and (max-width: 767px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dec-pic/overlay-480.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dec-pic/overlay-960@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dec-pic/overlay-768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dec-pic/overlay-1536@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .overlay {
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dec-pic/overlay-1600.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dec-pic/overlay-3200@2x.jpg);
+  }
+}
+
 .button__primary {
   margin-top: 30px;
   color: #ffffff;
@@ -609,6 +647,10 @@ body.modal-open {
 
 .section-team {
   background-color: #f5f4fa;
+}
+
+.container.team {
+  padding: 0;
 }
 
 .team__title {
@@ -765,6 +807,7 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer-container {
+    width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

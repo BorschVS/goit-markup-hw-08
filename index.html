@@ -87,7 +87,7 @@
                   ><svg class="icon-post" width="16" height="12">
                     <use href="./images/symbol-defs.svg#icon-envelope"></use>
                   </svg>
-                  info@devstudio.com
+                  <span>info@devstudio.com</span>
                 </a>
               </li>
               <li class="contacts__item">
@@ -95,7 +95,7 @@
                   ><svg class="icon-phone" width="10" height="16">
                     <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                   </svg>
-                  +38 096 111 11 11
+                  <span>+38 096 111 11 11</span>
                 </a>
               </li>
             </ul>
@@ -194,10 +194,13 @@
             <li class="about-list__item">
               <div class="about-thumb">
                 <img
-                  src="images/first-img.jpg"
-                  alt="Процес кодування на планшеті"
-                  width="370"
-                  height="294"
+                  srcset="
+                    /images/about/desktop-apps-370.jpg    1x,
+                    /images/about/desktop-apps-740@2x.jpg 2x
+                  "
+                  src="/images/desktop-apps-370.jpg"
+                  alt="Кодування на планшеті"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
                 />
                 <p class="about-thumb__text">Десктопні додатки</p>
               </div>
@@ -205,10 +208,13 @@
             <li class="about-list__item">
               <div class="about-thumb">
                 <img
-                  src="images/sec-img.jpg"
-                  alt="Дівчина з телефоном перед ноутбуком"
-                  width="370"
-                  height="294"
+                  srcset="
+                    /images/about/mobile-apps-370.jpg    1x,
+                    /images/about/mobile-apps-740@2x.jpg 2x
+                  "
+                  src="/images/mobile-apps-370.jpg"
+                  alt="Кодування на планшеті"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
                 />
                 <p class="about-thumb__text">Мобільні додатки</p>
               </div>
@@ -216,10 +222,13 @@
             <li class="about-list__item">
               <div class="about-thumb">
                 <img
-                  src="images/tr-img.jpg"
-                  alt="Вибір кольору на планшеті"
-                  width="370"
-                  height="294"
+                  srcset="
+                    /images/about/design-370.jpg    1x,
+                    /images/about/design-740@2x.jpg 2x
+                  "
+                  src="/images/design-370.jpg"
+                  alt="Кодування на планшеті"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
                 />
                 <p class="about-thumb__text">Дизайнерські рішення</p>
               </div>
@@ -236,7 +245,10 @@
           <ul class="team-list">
             <li class="team-list__item">
               <img
-                srcset="./images/team/pd-450.jpg 450w, ./images/team/pd-900@2x.jpg 900w"
+                srcset="
+                  ./images/team/pd-450.jpg    450w,
+                  ./images/team/pd-900@2x.jpg 900w
+                "
                 src="./images/team/pd-450.jpg"
                 alt="Веселий чоловік"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
@@ -291,7 +303,10 @@
             <li class="team-list__item">
               <img
                 class="team-img"
-                srcset="./images/team/frontender-450.jpg 450w, ./images/team/frontender-900@2x.jpg 900w"
+                srcset="
+                  ./images/team/frontender-450.jpg    450w,
+                  ./images/team/frontender-900@2x.jpg 900w
+                "
                 src="./images/team/frontender-450.jpg"
                 alt="Усміхнена дівчина"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
@@ -345,7 +360,10 @@
             </li>
             <li class="team-list__item">
               <img
-                srcset="./images/team/marketolog-450.jpg 450w, ./images/team/marketolog-900@2x.jpg 900w"
+                srcset="
+                  ./images/team/marketolog-450.jpg    450w,
+                  ./images/team/marketolog-900@2x.jpg 900w
+                "
                 src="images/team/marketolog-450.jpg"
                 alt="Усміхнений чоловік"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
@@ -399,7 +417,10 @@
             </li>
             <li class="team-list__item">
               <img
-                srcset="./images/team/ui-450.jpg 450w, ./images/team/ui-900@2x.jpg 900w"
+                srcset="
+                  ./images/team/ui-450.jpg    450w,
+                  ./images/team/ui-900@2x.jpg 900w
+                "
                 src="images/team/ui-450.jpg"
                 alt="Впевнений чоловік"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
