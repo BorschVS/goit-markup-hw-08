@@ -193,43 +193,70 @@
           <ul class="about-list list">
             <li class="about-list__item">
               <div class="about-thumb">
-                <img
-                  srcset="
-                    /images/about/desktop-apps-370.jpg    1x,
-                    /images/about/desktop-apps-740@2x.jpg 2x
-                  "
-                  src="/images/desktop-apps-370.jpg"
-                  alt="Кодування на планшеті"
-                  sizes="(min-width: 1200px) 33vw, 100vw"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about/desktop-apps-370.webp    1x,
+                      ./images/about/desktop-apps-740@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/about/desktop-apps-370.jpg    1x,
+                      ./images/about/desktop-apps-740@2x.jpg 2x
+                    "
+                    src="./images/desktop-apps-370.jpg"
+                    alt="Кодування на планшеті"
+                    sizes="(min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <p class="about-thumb__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="about-list__item">
               <div class="about-thumb">
-                <img
-                  srcset="
-                    /images/about/mobile-apps-370.jpg    1x,
-                    /images/about/mobile-apps-740@2x.jpg 2x
-                  "
-                  src="/images/mobile-apps-370.jpg"
-                  alt="Кодування на планшеті"
-                  sizes="(min-width: 1200px) 33vw, 100vw"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about/mobile-apps-370.webp    1x,
+                      ./images/about/mobile-apps-740@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/about/mobile-apps-370.jpg    1x,
+                      ./images/about/mobile-apps-740@2x.jpg 2x
+                    "
+                    src="./images/mobile-apps-370.jpg"
+                    alt="Кодування на планшеті"
+                    sizes="(min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <p class="about-thumb__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="about-list__item">
               <div class="about-thumb">
-                <img
-                  srcset="
-                    /images/about/design-370.jpg    1x,
-                    /images/about/design-740@2x.jpg 2x
-                  "
-                  src="/images/design-370.jpg"
-                  alt="Кодування на планшеті"
-                  sizes="(min-width: 1200px) 33vw, 100vw"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about/design-370.webp    1x,
+                      ./images/about/design-740@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/about/design-370.jpg    1x,
+                      ./images/about/design-740@2x.jpg 2x
+                    "
+                    src="./images/design-370.jpg"
+                    alt="Кодування на планшеті"
+                    sizes="(min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <p class="about-thumb__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -244,15 +271,25 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                srcset="
-                  ./images/team/pd-450.jpg    450w,
-                  ./images/team/pd-900@2x.jpg 900w
-                "
-                src="./images/team/pd-450.jpg"
-                alt="Веселий чоловік"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/pd-450.webp    450w,
+                    ./images/team/pd-900@2x.webp 900w
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  srcset="
+                    ./images/team/pd-450.jpg    450w,
+                    ./images/team/pd-900@2x.jpg 900w
+                  "
+                  src="./images/team/pd-450.jpg"
+                  alt="Веселий чоловік"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__subtitle">Ігор Дем'яненко</h3>
                 <p class="team-box__text">Product Designer</p>
@@ -301,6 +338,14 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/frontender-450.webp    450w,
+                    ./images/team/frontender-900@2x.webp 900w
+                  "
+                  type="image/webp"
+                />
               <img
                 class="team-img"
                 srcset="
@@ -311,6 +356,7 @@
                 alt="Усміхнена дівчина"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__subtitle">Ольга Рєпіна</h3>
                 <p class="team-box__text">Frontend Developer</p>
@@ -359,6 +405,14 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/marketolog-450.webp    450w,
+                    ./images/team/marketolog-900@2x.webp 900w
+                  "
+                  type="image/webp"
+                />
               <img
                 srcset="
                   ./images/team/marketolog-450.jpg    450w,
@@ -368,6 +422,7 @@
                 alt="Усміхнений чоловік"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__subtitle">Микола Тарасов</h3>
                 <p class="team-box__text">Marketing</p>
@@ -416,6 +471,14 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ui-450.webp    450w,
+                    ./images/team/ui-900@2x.webp 900w
+                  "
+                  type="image/webp"
+                />
               <img
                 srcset="
                   ./images/team/ui-450.jpg    450w,
@@ -425,6 +488,7 @@
                 alt="Впевнений чоловік"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__subtitle">Михайло Єрмаков</h3>
                 <p class="team-box__text">UI Designer</p>
