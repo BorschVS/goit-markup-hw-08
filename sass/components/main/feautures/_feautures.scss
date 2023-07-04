@@ -2,8 +2,6 @@
   @extend %list;
 
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -27,14 +25,24 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: calc((100% - 30px * 4) / 4);
+    width: calc((100% - 30px * 3) / 4);
   }
 }
 
 .feauture-box__subtitle {
   @extend %subtitle;
-  text-align: center;
+
   margin-bottom: 10px;
+
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .feauture-box__text {
@@ -42,5 +50,6 @@
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
 }

@@ -17,6 +17,10 @@
   }
 }
 
+.menu-button.is-open {
+  position: fixed;
+}
+
 .menu-button__icon {
   transition: fill $transition-derault;
   &:active {
