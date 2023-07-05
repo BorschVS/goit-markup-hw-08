@@ -14,6 +14,8 @@
 
   overflow-y: scroll;
 
+  z-index: 3;
+
   &.is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -215,7 +217,7 @@ textarea::placeholder {
 
 .icon-checked {
   display: inline-block;
-  width: 15px;
+  min-width: 15px;
   height: 15px;
   border: 2px solid $title-text-color;
   border-radius: 2px;
@@ -230,11 +232,11 @@ textarea::placeholder {
 }
 
 .form-field.checkbox {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 8px;
   margin-left: 4px;
 
@@ -245,6 +247,11 @@ textarea::placeholder {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.36px;
+
+  @media screen and (max-width: $tablet) {
+    display: inline-flex;
+    margin-left: 4px;
+  }
 
   @media screen and (min-width: $desktop) {
     font-size: 14px;

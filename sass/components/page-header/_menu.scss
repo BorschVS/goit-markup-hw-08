@@ -5,8 +5,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 480px;
-    height: 100vh;
+    width: 100%;;
+    height: 120vh;
 
     z-index: 1;
 
@@ -45,6 +45,7 @@
     margin-bottom: 48px;
 
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
   }
   @media screen and (min-width: $tablet) {

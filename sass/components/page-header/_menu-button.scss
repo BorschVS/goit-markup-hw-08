@@ -9,7 +9,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 2;
+    z-index: 1;
   }
 
   @media screen and (min-width: $tablet) {
@@ -19,6 +19,7 @@
 
 .menu-button.is-open {
   position: fixed;
+  z-index: 2;
 }
 
 .menu-button__icon {

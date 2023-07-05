@@ -20,12 +20,13 @@
 
   letter-spacing: 0.42px;
 
-  translate: border 2s cubic-bezier(0.4, 0, 0.2, 1);
+  translate: border $transition-derault;
 }
 
 .subscribe-form__input {
   @extend %centeredMargin;
-  width: 100%;
+  display: block;
+
   height: 50px;
   padding-left: 16px;
   margin-bottom: 20px;
@@ -38,7 +39,11 @@
 
   transition: border $transition-derault;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 481px) {
     width: 450px;
   }
 

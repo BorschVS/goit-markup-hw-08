@@ -26,6 +26,6 @@ p {
   padding: 0;
 }
 
-body.modal-open, body.menu-open {
+body.modal-open, .menu-container.is-open {
   overflow: hidden;
 }
