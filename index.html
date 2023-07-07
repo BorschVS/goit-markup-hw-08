@@ -39,7 +39,6 @@
             class="menu-button"
             data-menu-button
             aria-expanded="true"
-            aria-controls="mobile-menu"
           >
             <svg
               class="menu-button__icon"
@@ -279,21 +278,66 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/pd-354.webp    354w,
                     ./images/team/pd-450.webp    450w,
-                    ./images/team/pd-708@2x.webp 708w,
                     ./images/team/pd-900@2x.webp 900w
                   "
+                  media="(max-width: 767px)"
                   type="image/webp"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="100vw"
                 />
-                <img
+                <source
                   srcset="
                     ./images/team/pd-450.jpg    450w,
                     ./images/team/pd-900@2x.jpg 900w
                   "
-                  src="./images/team/pd-450.jpg"
-                  alt="Веселий чоловік"
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/pd-354.webp    354w,
+                    ./images/team/pd-708@2x.webp 708w
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                  sizes="(max-width: 1199px) 50vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/pd-354.jpg    354w,
+                    ./images/team/pd-708@2x.jpg 708w
+                  "
+                  media="(max-width: 1199px)"
+                  sizes="(min-width: 768px) 50vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/pd-270.webp    270w,
+                    ./images/team/pd-540@2x.webp 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 25vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/pd-354.jpg    354w,
+                    ./images/team/pd-708@2x.jpg 708w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw"
+                />
+                <img
+                  srcset="
+                    ./images/team/pd-270.jpg    270w,
+                    ./images/team/pd-354.jpg    354w,
+                    ./images/team/pd-450.jpg    450w,
+                    ./images/team/pd-540@2x.jpg 540w,
+                    ./images/team/pd-708@2x.jpg 708w,
+                    ./images/team/pd-900@2x.jpg 900w
+                  "
+                  src="./images-portfolio/lab.jpg"
+                  alt="Ноутбук із зображенням сайту"
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
               </picture>
@@ -351,17 +395,63 @@
                     ./images/team/frontender-450.webp    450w,
                     ./images/team/frontender-900@2x.webp 900w
                   "
+                  media="(max-width: 767px)"
                   type="image/webp"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="100vw"
                 />
-                <img
-                  class="team-img"
+                <source
                   srcset="
                     ./images/team/frontender-450.jpg    450w,
                     ./images/team/frontender-900@2x.jpg 900w
                   "
-                  src="./images/team/frontender-450.jpg"
-                  alt="Усміхнена дівчина"
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/frontender-354.webp    354w,
+                    ./images/team/frontender-708@2x.webp 708w
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                  sizes="(max-width: 1199px) 50vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/frontender-354.jpg    354w,
+                    ./images/team/frontender-708@2x.jpg 708w
+                  "
+                  media="(max-width: 1199px)"
+                  sizes="(min-width: 768px) 50vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/frontender-270.webp    270w,
+                    ./images/team/frontender-540@2x.webp 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 25vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/frontender-354.jpg    354w,
+                    ./images/team/frontender-708@2x.jpg 708w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw"
+                />
+                <img
+                  srcset="
+                    ./images/team/frontender-270.jpg    270w,
+                    ./images/team/frontender-354.jpg    354w,
+                    ./images/team/frontender-450.jpg    450w,
+                    ./images/team/frontender-540@2x.jpg 540w,
+                    ./images/team/frontender-708@2x.jpg 708w,
+                    ./images/team/frontender-900@2x.jpg 900w
+                  "
+                  src="./images/team/frontender.jpg"
+                  alt="Ноутбук із зображенням сайту"
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
               </picture>
@@ -419,16 +509,63 @@
                     ./images/team/marketolog-450.webp    450w,
                     ./images/team/marketolog-900@2x.webp 900w
                   "
+                  media="(max-width: 767px)"
                   type="image/webp"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="100vw"
                 />
-                <img
+                <source
                   srcset="
                     ./images/team/marketolog-450.jpg    450w,
                     ./images/team/marketolog-900@2x.jpg 900w
                   "
-                  src="images/team/marketolog-450.jpg"
-                  alt="Усміхнений чоловік"
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/marketolog-354.webp    354w,
+                    ./images/team/marketolog-708@2x.webp 708w
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                  sizes="(max-width: 1199px) 50vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/marketolog-354.jpg    354w,
+                    ./images/team/marketolog-708@2x.jpg 708w
+                  "
+                  media="(max-width: 1199px)"
+                  sizes="(min-width: 768px) 50vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/marketolog-270.webp    270w,
+                    ./images/team/marketolog-540@2x.webp 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 25vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/marketolog-354.jpg    354w,
+                    ./images/team/marketolog-708@2x.jpg 708w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw"
+                />
+                <img
+                  srcset="
+                    ./images/team/marketolog-270.jpg    270w,
+                    ./images/team/marketolog-354.jpg    354w,
+                    ./images/team/marketolog-450.jpg    450w,
+                    ./images/team/marketolog-540@2x.jpg 540w,
+                    ./images/team/marketolog-708@2x.jpg 708w,
+                    ./images/team/marketolog-900@2x.jpg 900w
+                  "
+                  src="./images/team/marketolog.jpg"
+                  alt="Ноутбук із зображенням сайту"
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
               </picture>
@@ -486,16 +623,63 @@
                     ./images/team/ui-450.webp    450w,
                     ./images/team/ui-900@2x.webp 900w
                   "
+                  media="(max-width: 767px)"
                   type="image/webp"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="100vw"
                 />
-                <img
+                <source
                   srcset="
                     ./images/team/ui-450.jpg    450w,
                     ./images/team/ui-900@2x.jpg 900w
                   "
-                  src="images/team/ui-450.jpg"
-                  alt="Впевнений чоловік"
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/ui-354.webp    354w,
+                    ./images/team/ui-708@2x.webp 708w
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                  sizes="(max-width: 1199px) 50vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/ui-354.jpg    354w,
+                    ./images/team/ui-708@2x.jpg 708w
+                  "
+                  media="(max-width: 1199px)"
+                  sizes="(min-width: 768px) 50vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/ui-270.webp    270w,
+                    ./images/team/ui-540@2x.webp 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 25vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/ui-354.jpg    354w,
+                    ./images/team/ui-708@2x.jpg 708w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw"
+                />
+                <img
+                  srcset="
+                    ./images/team/ui-270.jpg    270w,
+                    ./images/team/ui-354.jpg    354w,
+                    ./images/team/ui-450.jpg    450w,
+                    ./images/team/ui-540@2x.jpg 540w,
+                    ./images/team/ui-708@2x.jpg 708w,
+                    ./images/team/ui-900@2x.jpg 900w
+                  "
+                  src="./images/team/ui.jpg"
+                  alt="Ноутбук із зображенням сайту"
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
               </picture>
@@ -769,7 +953,7 @@
               value="policy"
             />
             <span class="icon-checked"></span>
-            Погоджуюся з розсилкою та приймаю
+            <span class="checkbox-input__txt"></span> Погоджуюся з розсилкою та приймаю
             <a href="#" class="policy-link">Умови договору</a>
           </label>
           <button class="button-submit" type="submit">Відправити</button>
