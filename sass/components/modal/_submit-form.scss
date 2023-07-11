@@ -29,6 +29,11 @@
 
 .modal {
   position: relative;
+  top: 50%;
+  left: 50%;
+  max-width: 450px;
+
+  transform: translate(-50%, -50%);
 
   background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -75,9 +80,7 @@
   background-color: transparent;
   border: 1px solid $backdrop-color;
   border-radius: 50px;
-
-  @media screen and (min-width: $tablet) {
-  }
+  cursor: pointer;
 }
 
 .icon-close {
@@ -88,9 +91,9 @@
 
   transition: fill $transition-derault;
 
-  cursor: pointer;
-
-  .close:hover & {
+  .close:hover &,
+  .close:focus &,
+  .close:active & {
     fill: $accent-color;
   }
 }
@@ -98,6 +101,8 @@
 // form
 
 .submit-form {
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   margin: 0;
 }
@@ -237,11 +242,11 @@ textarea::placeholder {
 }
 
 .form-field.checkbox {
-  display: inline-flex;
+  display: flex;
   margin-left: 4px;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   margin-top: 20px;
   margin-bottom: 30px;

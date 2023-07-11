@@ -21,7 +21,8 @@
 }
 
 .portfolio-list__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
   
     transition: box-shadow 250ms $transition-derault;
@@ -76,6 +77,9 @@
 }
 
 .caption {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 20px 24px;
 
   background-color: $primary-white-color;
@@ -102,4 +106,5 @@
   letter-spacing: 0.03em;
 
   color: $primary-text-color;
+
 }
