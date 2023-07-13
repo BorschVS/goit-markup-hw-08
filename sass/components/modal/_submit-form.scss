@@ -28,6 +28,7 @@
 // modal
 
 .modal {
+
   position: relative;
   top: 50%;
   left: 50%;
@@ -45,7 +46,11 @@
   transition: transform $transition-derault;
 
   .backdrop.is-hidden & {
-    transform: translate(-50%, -25%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  @media screen and (max-width: 767px) {
+    transform: translate(-50%, -35%) scale(1);
   }
 
   @media screen and (min-width: $tablet) {
@@ -53,13 +58,14 @@
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -20%) scale(1);
+    transform: translate(-50%, -25%) scale(1);
 
     max-width: 450px;
     width: 100%;
   }
 
   @media screen and (min-width: $desktop) {
+    transform: translate(-50%, -50%) scale(1);
     max-width: 528px;
   }
 }

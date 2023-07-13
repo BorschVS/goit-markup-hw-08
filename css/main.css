@@ -219,6 +219,7 @@ body.is-open {
     border: none;
     background-color: transparent;
     z-index: 1;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 768px) {
@@ -228,14 +229,14 @@ body.is-open {
 }
 
 .menu-button.is-open {
-  position: fixed;
+  position: absolute;
   z-index: 2;
 }
 
 .menu-button__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-button__icon:active {
+.menu-button:active .menu-button__icon, .menu-button:hover .menu-button__icon, .menu-button:focus .menu-button__icon {
   fill: #2196f3;
 }
 
@@ -271,8 +272,8 @@ body.is-open {
 @media screen and (max-width: 767px) {
   .site-nav,
   .contacts {
-    margin-top: 48px;
-    margin-left: 40px;
+    margin-top: 7vw;
+    margin-left: 7vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -287,7 +288,7 @@ body.is-open {
   .contacts {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 20%;
+    margin-top: 10vh;
   }
 }
 @media screen and (min-width: 768px) {
@@ -306,46 +307,20 @@ body.is-open {
 }
 
 @media screen and (max-width: 767px) {
-  .contacts__number {
-    font-size: 34px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.68px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .contacts__mail {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.48px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .site-nav__item {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .site-nav__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
   }
 }
 
 .site-nav__link,
 .contacts__link {
-  display: flex;
+  display: inline-flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .site-nav__link,
   .contacts__link {
-    font-size: 40px;
     font-weight: 500;
     letter-spacing: 0.8px;
   }
@@ -359,6 +334,18 @@ body.is-open {
   fill: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav__link {
+    font-size: 9vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contacts__link {
   color: #757575;
   align-items: center;
@@ -366,9 +353,8 @@ body.is-open {
 }
 @media screen and (max-width: 767px) {
   .contacts__link {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 34px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     letter-spacing: 0.68px;
   }
 }
@@ -404,6 +390,24 @@ body.is-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__number {
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.68px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__mail {
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+}
+
 .menu-container {
   background-color: #ffffff;
 }
@@ -423,6 +427,7 @@ body.is-open {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 768px) {
@@ -445,11 +450,10 @@ body.is-open {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 10%;
-    margin-left: 40px;
-    margin-bottom: 48px;
+    margin-top: 2vh;
+    margin-left: 7vw;
+    margin-bottom: 7vh;
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
   }
 }
@@ -465,7 +469,7 @@ body.is-open {
 
 .media-list__link {
   color: #2196f3;
-  font-size: 18px;
+  font-size: 4vw;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.36px;
@@ -1217,20 +1221,26 @@ body.is-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -25%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    transform: translate(-50%, -35%) scale(1);
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%) scale(1);
+    transform: translate(-50%, -25%) scale(1);
     max-width: 450px;
     width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    transform: translate(-50%, -50%) scale(1);
     max-width: 528px;
   }
 }

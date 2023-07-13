@@ -10,8 +10,8 @@
   @extend %list;
 
   @media screen and (max-width: 767px) {
-    margin-top: 48px;
-    margin-left: 40px;
+    margin-top: 7vw;
+    margin-left: 7vw;
   }
 
   @media screen and (min-width: $tablet) {
@@ -24,7 +24,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 20%;
+    margin-top: 10vh;
   }
 
   @media screen and (min-width: $tablet) {
@@ -40,45 +40,20 @@
   }
 }
 
-.contacts__number {
-  @media screen and (max-width: 767px) {
-    font-size: 34px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.68px;
-  }
-}
-
-.contacts__mail {
-  @media screen and (max-width: 767px) {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.48px;
-  }
-}
-
 .site-nav__item {
   @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
-.site-nav__link {
-  @media screen and (min-width: $tablet) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
   }
 }
 
 .site-nav__link,
 .contacts__link {
   @extend %nav;
-  display: flex;
+  display: inline-flex;
 
   @media screen and (max-width: 767px) {
-    font-size: 40px;
+    // font-size: 38px;
     font-weight: 500;
     letter-spacing: 0.8px;
   }
@@ -94,16 +69,25 @@
   }
 }
 
+.site-nav__link {
+  @media screen and (max-width: 767px) {
+    font-size: 9vw;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contacts__link {
   color: $primary-text-color;
   align-items: center;
   line-height: normal;
 
   @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 
-    font-size: 34px;
     letter-spacing: 0.68px;
   }
 
@@ -136,5 +120,23 @@
       background-color: $accent-color;
       border-radius: 2px;
     }
+  }
+}
+
+.contacts__number {
+  @media screen and (max-width: 767px) {
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.68px;
+  }
+}
+
+.contacts__mail {
+  @media screen and (max-width: 767px) {
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
   }
 }

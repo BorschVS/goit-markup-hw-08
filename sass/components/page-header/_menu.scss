@@ -16,9 +16,10 @@
       max-width: 480px;
       position: fixed;
       overflow-y: scroll;
-   
+
       display: flex;
-    flex-direction: column;
+      flex-direction: column;
+      justify-content: space-evenly;
     }
   }
 
@@ -41,12 +42,11 @@
     margin: 0;
     padding: 0;
 
-    margin-top: 10%;
-    margin-left: 40px;
-    margin-bottom: 48px;
+    margin-top: 2vh;
+    margin-left: 7vw;
+    margin-bottom: 7vh;
 
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
   }
   @media screen and (min-width: $tablet) {
@@ -62,7 +62,7 @@
 
 .media-list__link {
   color: $accent-color;
-  font-size: 18px;
+  font-size: 4vw;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.36px;

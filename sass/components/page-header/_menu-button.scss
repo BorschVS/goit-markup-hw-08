@@ -9,21 +9,26 @@
     border: none;
     background-color: transparent;
     z-index: 1;
+    cursor: pointer;
   }
 
   @media screen and (min-width: $tablet) {
     display: none;
   }
+
+  // &:hover {
+  //   fill: $accent-color;
+  // }
 }
 
 .menu-button.is-open {
-  position: fixed;
+  position: absolute;
   z-index: 2;
 }
 
 .menu-button__icon {
   transition: fill $transition-derault;
-  &:active {
+  .menu-button:active &, .menu-button:hover &, .menu-button:focus & {
     fill: $accent-color;
   }
 }
