@@ -28,7 +28,6 @@
 // modal
 
 .modal {
-
   position: relative;
   top: 50%;
   left: 50%;
@@ -238,24 +237,16 @@ textarea::placeholder {
     background-image $transition-derault, border $transition-derault;
 }
 
-.checkbox-input__txt {
-  padding-right: 8px;
-}
-
-.policy-link {
-  margin-left: 8px;
-  color: $accent-color;
-}
-
 .form-field.checkbox {
-  display: flex;
+  display: inline-flex;
+  max-width: 450px;
   margin-left: 4px;
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
-
   margin-top: 20px;
   margin-bottom: 30px;
+  gap: 8px;
 
   font-weight: 400;
   font-size: 12px;
@@ -264,7 +255,6 @@ textarea::placeholder {
 
   @media screen and (min-width: $tablet) {
     width: 450px;
-
   }
 
   @media screen and (min-width: $desktop) {
@@ -274,10 +264,18 @@ textarea::placeholder {
   }
 }
 
+.checkbox-input__txt {
+  display: inline-block;
+}
+
+.policy-link {
+  flex-wrap: wrap;
+  color: $accent-color;
+}
+
 .button-submit {
   display: block;
   @extend %centeredMargin;
-
   @extend %button;
 
   &:hover,

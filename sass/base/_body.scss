@@ -26,10 +26,7 @@ p {
   padding: 0;
 }
 
-body.modal-open {
+body.modal-open, body.mobile-open {
   overflow: hidden;
 }
 
-body.is-open {
-  overflow: hidden;
-}

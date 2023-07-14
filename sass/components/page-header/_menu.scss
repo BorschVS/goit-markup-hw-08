@@ -13,10 +13,6 @@
     display: none;
 
     &.is-open {
-      max-width: 480px;
-      position: fixed;
-      overflow-y: scroll;
-
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -30,8 +26,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
     gap: 305px;
   }
 }

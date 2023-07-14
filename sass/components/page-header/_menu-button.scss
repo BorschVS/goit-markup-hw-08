@@ -16,14 +16,14 @@
     display: none;
   }
 
+  &.is-open {
+    position: absolute;
+    z-index: 2;
+  }
+
   // &:hover {
   //   fill: $accent-color;
   // }
-}
-
-.menu-button.is-open {
-  position: absolute;
-  z-index: 2;
 }
 
 .menu-button__icon {
